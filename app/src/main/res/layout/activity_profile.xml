@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.livelong.profile">
+
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/profile_age"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Age"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profile_name"
+        android:layout_alignLeft="@+id/profile_name"
+        android:layout_alignStart="@+id/profile_name" />
+    <EditText
+        android:id="@+id/profile_bloodgroup"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Blood Group"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/profile_age"
+        android:layout_alignLeft="@+id/profile_age"
+        android:layout_alignStart="@+id/profile_age" />
+
+
+
+
+    <TextView
+        android:id="@+id/problems_TextView"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="@android:color/black"
+        android:text="Problems"
+        android:layout_above="@+id/allegies_Check_Box"
+        android:layout_alignLeft="@+id/user_bloodgroup_TextView"
+        android:layout_alignStart="@+id/user_bloodgroup_TextView"
+        android:layout_marginBottom="29dp" />
+
+    <CheckBox
+        android:id="@+id/allegies_Check_Box"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:textSize="10pt"
+        android:text="Allergies"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/problems_TextView"
+        android:layout_alignStart="@+id/problems_TextView" />
+    <CheckBox
+        android:id="@+id/asthma_Check_Box"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="Asthma"
+        android:layout_below="@+id/allegies_Check_Box"
+        android:layout_alignLeft="@+id/allegies_Check_Box"
+        android:layout_alignStart="@+id/allegies_Check_Box" />
+    <CheckBox
+        android:id="@+id/diabetes_Check_Box"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:text="Diabetes"
+        android:layout_below="@+id/asthma_Check_Box"
+        android:layout_alignLeft="@+id/asthma_Check_Box"
+        android:layout_alignStart="@+id/asthma_Check_Box" />
+    <TextView
+        android:id="@+id/bloodpressureTextView"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="10pt"
+        android:textColor="@android:color/black"
+        android:text="Blood Pressure"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/spinner"
+        android:layout_alignLeft="@+id/problems_TextView"
+        android:layout_alignStart="@+id/problems_TextView" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/Blood_pressures"
+        android:layout_above="@+id/save_profile_Button"
+        android:layout_alignRight="@+id/bloodpressureTextView"
+        android:layout_alignEnd="@+id/bloodpressureTextView"
+        android:layout_marginBottom="25dp" />
+    <Button
+        android:id="@+id/save_profile_Button"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/bloodpressureTextView"
+        android:layout_alignStart="@+id/bloodpressureTextView" />
+
+
+</RelativeLayout>
+

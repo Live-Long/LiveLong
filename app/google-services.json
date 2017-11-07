@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1095267500390",
+    "firebase_url": "https://livelong-182518.firebaseio.com",
+    "project_id": "livelong-182518",
+    "storage_bucket": "livelong-182518.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095267500390:android:b70a12633f93b24b",
+        "android_client_info": {
+          "package_name": "com.example.asus.livelong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095267500390-qibfui61kp4j2t4kfruqaf5gbabp2qku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.livelong",
+            "certificate_hash": "53e18e41313301597801470a5af1c6957e2e3425"
+          }
+        },
+        {
+          "client_id": "1095267500390-mi0r7s2geg6ss9j9107v3sh7049ed6vb.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1095267500390-n41kr60co10ppp1l84e64u0kpj0raore.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6eyFEWjcQLSqjdReT-KQ3LKRIy0IYx5E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095267500390-mi0r7s2geg6ss9j9107v3sh7049ed6vb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

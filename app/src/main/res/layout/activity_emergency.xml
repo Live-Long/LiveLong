@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.livelong.firstscreen"
+    >
+
+    <Button
+        android:id="@+id/emergencycallbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:layout_alignTop="@+id/emergencyimagebg"
+        android:textColor="#ff0000"
+        android:layout_alignRight="@+id/emergencyimagebg"
+        android:layout_alignEnd="@+id/emergencyimagebg"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="15pt"
+        android:layout_marginRight="102dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginTop="119dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/emergency"
+        android:scaleX="1.10"
+        android:id="@+id/emergencyimagebg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/emergency_number"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/emergencyimagebg"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.livelong.firstscreen"
+    >
+
+    <TextView
+        android:id="@+id/LoveLiveLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Long"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="38pt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="164dp"
+        tools:targetApi="jelly_bean"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12pt"
+        android:text="Welcome!"
+        android:layout_below="@+id/LoveLiveLogo"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:progressTint="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>

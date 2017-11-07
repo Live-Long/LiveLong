@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/previous_medicines"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:text="Previous Medicines"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/BP_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+
+        android:text="BLOOD PRESSURE\nSTATISTICS"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/temperature_statistics"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="115dp"
+        android:text="Temparature\nStatistics"
+        android:textSize="25dp"/>
+
+
+    <Button
+        android:id="@+id/previous_prescription"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:text="Previous Prescription"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/notify"
+        android:textStyle="bold"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Notify"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+
+</LinearLayout>

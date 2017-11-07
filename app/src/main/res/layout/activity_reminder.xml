@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:onClick="toggleAlarm">
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder 1:"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="9pt"
+            android:id="@+id/alarm1"
+            android:layout_column="0"/>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:focusable="false"
+
+            android:hint="Reminder Date-Time"
+            android:onClick="dateOnClick" />
+
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:checked="false"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="toggleAlarm"
+            android:text="alarm 1"
+            android:textOff="Turn On"
+            android:textOn="Turn Off" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <EditText
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNotes1"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:hint="Medicine Name"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder 2:"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="9pt"
+            android:id="@+id/alarm2"
+            android:layout_column="0"/>
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Reminder Date-Time"
+            android:id="@+id/editText2"
+            android:layout_column="1"
+            android:onClick="dateOnClick"
+            android:focusable="false"/>
+        <ToggleButton
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alarm 2"
+            android:id="@+id/toggleButton2"
+            android:layout_column="2"
+            android:checked="false"
+            android:textOff="Turn On"
+            android:textOn= "Turn Off"
+            android:onClick="toggleAlarm"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <EditText
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNotes2"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:hint="Medicine Name"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder 3:"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="9pt"
+            android:id="@+id/alarm3"
+            android:layout_column="0"/>
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Reminder Date-Time"
+            android:id="@+id/editText3"
+            android:layout_column="1"
+            android:onClick="dateOnClick"
+            android:focusable="false"/>
+        <ToggleButton
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alarm 2"
+            android:id="@+id/toggleButton3"
+            android:layout_column="2"
+            android:checked="false"
+            android:textOff="Turn On"
+            android:textOn="Turn Off"
+            android:onClick="toggleAlarm"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <EditText
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNotes3"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:hint="Medicine Name"/>
+    </TableRow>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/reminder2pic"
+        android:scaleX="1.10"
+        />
+
+</TableLayout>

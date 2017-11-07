@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.livelong.bloodPressure">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="81dp"
+            android:layout_height="39dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="    Date: "
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <TextView
+            android:id="@+id/Date_editText"
+            android:layout_width="186dp"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/setDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Set"
+            android:textSize="20dp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/Time"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="82dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="    Time: "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="127dp" />
+
+        <EditText
+            android:id="@+id/hour"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="HH"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="118dp" />
+
+
+        <TextView
+            android:id="@+id/dot"
+            android:layout_width="20dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=":"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/minute"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:hint="MIN"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="118dp" />
+
+
+
+
+        <Spinner
+            android:id="@+id/am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:entries="@array/am_pm"
+            android:layout_weight="0.69"></Spinner>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/BP"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="87dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="    Blood Pressure: "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="197dp"
+            android:layout_weight="0.72" />
+
+        <EditText
+            android:id="@+id/Systolic"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Systolic"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <EditText
+            android:id="@+id/Diastolic"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Diastolic"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp">
+
+
+        <Button
+            android:id="@+id/saveBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="318dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/recordBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistics"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

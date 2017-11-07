@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    android:orientation = "vertical"
+
+    <TextView
+        android:id="@+id/LoveLiveLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Long"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="38pt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12pt"
+        android:text="Sign-In"
+        android:layout_below="@+id/LoveLiveLogo"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.google.android.gms.common.SignInButton
+     android:id="@+id/sign_in_button"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+ </com.google.android.gms.common.SignInButton>
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Sign Out"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
