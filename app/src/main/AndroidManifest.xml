@@ -43,6 +43,8 @@
         <activity android:name=".Temperature_Graph" />
         <activity android:name=".history" />
         <activity android:name=".chatbot" />
+        <activity android:name=".bmi_graph" />
+
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -70,6 +72,10 @@
         <activity
             android:name=".Navigation_Drawer"
             android:label="@string/title_activity_navigation__drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DailyCare"
+            android:label="@string/title_activity_daily_care"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
