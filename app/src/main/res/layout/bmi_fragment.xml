@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/date_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="53dp"
+                android:layout_alignParentTop="true"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <Button
+                android:id="@+id/date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Date"
+                android:background="#AED6F1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/date_TextView" />
+
+            <TextView
+                android:id="@+id/bmitextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"/>
+
+
+            <Button
+                android:id="@+id/setBMI_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update BMI"
+                android:layout_marginTop="68dp"
+                android:background="#AED6F1"
+                android:layout_below="@+id/date_button"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:layout_marginTop="15dp"
+                android:background="#AED6F1"
+                android:layout_below="@+id/setBMI_button"
+                android:layout_toStartOf="@+id/setBMI_button" />
+
+
+            <Button
+                android:id="@+id/bmi_statistics_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STATISTICS"
+                android:background="#AED6F1"
+                android:layout_alignBaseline="@+id/clear_button"
+                android:layout_alignBottom="@+id/clear_button"
+                android:layout_toEndOf="@+id/setBMI_button" />
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date"
+                android:text="DATE"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="53dp"
+                android:layout_alignParentTop="true"
+                android:textSize="15dp"
+                android:textAlignment="gravity"
+                android:layout_centerHorizontal="true"
+                android:background="#E6B0AA"
+                />
+
+            <TextView
+                android:id="@+id/bmi"
+                android:text="BMI"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="53dp"
+                android:layout_alignParentTop="true"
+                android:textSize="15dp"
+                android:background="#ABEBC6"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+
+        <ListView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmi_statistics_button"
+            android:layout_alignParentStart="true"
+            android:background="#F9EBEA"
+            android:id="@+id/date_listView" />
+
+        <ListView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmi_statistics_button"
+            android:layout_alignParentStart="true"
+            android:background="#EAFAF1"
+            android:id="@+id/bmiNumber_listView" />
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

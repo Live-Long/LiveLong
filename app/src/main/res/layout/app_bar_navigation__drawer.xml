@@ -181,7 +181,7 @@
             android:textColor="@android:color/white"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="95dp"
-            android:text="History"
+            android:text="Daily Care"
             android:layout_below="@+id/HistoryButton"/>
         //*******************CheckUp*******************
         <ImageButton

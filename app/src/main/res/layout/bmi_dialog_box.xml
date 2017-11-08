@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/Height_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:ems="10"
+        android:hint="Height(centimetre)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Weight_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:paddingTop="20dp"
+        android:ems="10"
+        android:hint="Weight(kg)"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/Save_BMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Bmi" />
+</LinearLayout>

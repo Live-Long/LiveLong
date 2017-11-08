@@ -1,48 +1,114 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.asus.livelong.firstscreen"
-    >
-
-    <Button
-        android:id="@+id/emergencycallbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call"
-        android:layout_alignTop="@+id/emergencyimagebg"
-        android:textColor="#ff0000"
-        android:layout_alignRight="@+id/emergencyimagebg"
-        android:layout_alignEnd="@+id/emergencyimagebg"
-        android:fontFamily="sans-serif-condensed"
-        android:textStyle="bold"
-        android:textSize="15pt"
-        android:layout_marginRight="102dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginTop="119dp" />
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.asus.livelong.emergency">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/emergency"
-        android:scaleX="1.10"
-        android:id="@+id/emergencyimagebg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="1.35"
+        android:scaleY="2"
+        android:src="@drawable/softbackground3"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <EditText
-        android:id="@+id/emergency_number"
-        android:fontFamily="sans-serif-condensed"
+        <Button
+            android:id="@+id/emergencycallbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:layout_alignTop="@+id/emergencyimagebg"
+            android:textColor="#ff0000"
+            android:layout_alignRight="@+id/emergencyimagebg"
+            android:layout_alignEnd="@+id/emergencyimagebg"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="15pt"
+            android:layout_marginRight="102dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginTop="119dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/emergency"
+            android:scaleX="1.10"
+            android:id="@+id/emergencyimagebg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/name_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:layout_marginTop="103dp"
+            android:layout_below="@+id/emergencycallbutton"
+            android:layout_alignLeft="@+id/emergencyimagebg"
+            android:layout_alignStart="@+id/emergencyimagebg" />
+
+        <EditText
+            android:id="@+id/phnnumber_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Phone Number"
+            android:layout_below="@+id/name_editText"
+            android:layout_alignStart="@+id/name_editText"
+            android:layout_alignLeft="@+id/name_editText" />
+
+        <Button
+            android:id="@+id/savebutton"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:layout_alignBottom="@+id/phnnumber_editText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:id="@+id/name_textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter Number"
-        android:layout_marginTop="48dp"
-        android:layout_below="@+id/emergencyimagebg"
-        android:layout_centerHorizontal="true" />
+        android:textSize="14dp"
+    android:text="Saved Number"
+        android:layout_below="@+id/phnnumber_editText"
+        android:layout_toLeftOf="@+id/emergencycallbutton"
+        android:layout_toStartOf="@+id/emergencycallbutton"
+        android:layout_marginTop="19dp" />
 
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phnnumber_editText"
+            android:textSize="20dp"
 
+            android:layout_marginTop="45dp"
+            android:layout_alignLeft="@+id/phnnumber_editText"
+            android:layout_alignStart="@+id/phnnumber_editText" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/phnnumber_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/name_textView"
+            android:layout_alignLeft="@+id/name_textView"
+            android:layout_alignStart="@+id/name_textView" />
+
+    </RelativeLayout>
